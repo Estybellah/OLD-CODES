@@ -1,0 +1,737 @@
+*{
+    margin: 0;
+    padding: 0;
+      outline: none;
+     box-sizing: border-box;
+    
+}
+:root{
+    --primary-bg: linear-gradient( rgba(0, 255, 255, 0.404);
+     rgba(0,0,255, 0.68), black);
+        --transition: 3s all;
+    --small-screen: 25vw;
+    --medium-screen: 60vw;
+    --large-screen: 100vw
+}
+
+.body{
+    height: 400vh;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+
+}
+.body li{
+    list-style: none;
+}
+.body  a{
+    color: black;
+    text-decoration: none;
+}
+
+.body li a:hover{
+    color: black;
+}
+.body button{
+    letter-spacing: 1px;
+    outline: none;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+border: 1px solid aquamarine;
+
+}
+.body button:hover{
+transition: 2s ease;
+background-color: aqua;
+border-radius: 10px;
+border: none;
+box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+nav{
+    display: flex;
+}
+.black{
+    background-color: rgba(0, 0, 0, 0.356);
+    height: 85vh;
+}
+#webname {
+ margin: -1% 5% 0 5%;
+ position: fixed;
+
+ text-shadow: 10px 5px 5px purple;
+ font-size: 30px;
+ font-family: 'Times New Roman', Times, serif;
+ color: black;
+  text-transform: uppercase;
+}
+ #hero{
+    background:  linear-gradient(to right, black, rgba(255, 0, 251, 0.676), black);
+    width: 100%;
+    height: 70vh;
+    margin-top: 7%;
+    background-size: cover;
+   
+ }
+#navbar i {
+    background-color: black;
+
+}
+#webname{
+    display: flex;
+}
+#navbar{
+    background-color: white;
+    height: 10vh;
+    z-index: 1000;
+    top: 0;
+    padding: 3%;
+    position: fixed;
+
+}
+#navbar ul{
+    display: flex;
+    margin-left: 35%;
+    
+}
+#navbar li{
+ padding: 0 2%;
+
+}
+
+#navbar li a{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* hero text */
+
+#hero-text{
+    padding: 1% 5%;
+    font-family: poppins; 
+    color: black;
+    display: flex;
+    
+
+}
+#hero-text #left{
+    width: 180vw;
+}
+#hero-text #right{
+    display: flex;
+    margin-left: 10%;
+}
+ #hero-text #right img{
+    width: 45%;
+    margin-top: 2%; 
+    z-index: 10;
+   
+    border: 15px solid white;
+    height: 100%;
+}
+#hero-text #right img:nth-child(2){
+    margin: 10% 0 0 -10%;
+    height: 100%;
+    transform: rotate(30deg);
+}
+#hero-text h1{
+    color: white;
+    font-size: 39px;
+    font-weight: bolder;
+}
+#hero-text h6{
+    font-size: 14px;
+    margin-top: 5%;
+     color: white;
+}
+
+#hero-text button{
+ padding: 3% 5%;
+ background-color: white;
+ margin-top: 2% ;
+}
+#hero-text button:hover{
+    background-color: purple;
+}
+
+/* ABOUT US */
+
+ #about{
+    padding: 3%;
+    margin-top: 5%;
+    animation-delay: 2s;
+
+ }
+#small-text{
+    font-size: 14px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+#bold-text{
+    font-family: poppins;
+    font-weight: bolder;
+    color: black;
+}
+
+#md-text{
+ font-size: 16px;
+ max-width: 80%;
+font-family: 'Times New Roman', Times, serif;
+margin:  15% 10% 0 5%;
+line-height: 22px;
+}
+
+#about h1{
+    font-size: 45px;
+    margin-left: 10%;
+    max-width: 80%;
+}
+
+#details{
+    display: flex;
+    margin-top: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3%;
+}
+
+#details .image{
+    display: flex;
+}
+
+#details #left-col img{
+ width: 40vw;
+ display: flex;
+ height: 40vw;
+}
+#details #left-col img:nth-child(2){
+ margin: 15% 0 0 -50%;
+ width: 35vw;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.356);
+ height: 50vh;
+ border: 15px solid white;
+}
+
+#details #right-col{
+    margin: 5% 0 0 10%;
+}
+
+
+.box{
+    width: 10vw;
+    height: 10vh;
+    padding: 3%;
+    background-color: rgba(0, 0, 0, 0.368);
+    color: white;
+}
+
+/* services */
+
+#services{
+    background-color: whitesmoke;
+}
+#services .sec-box{
+    padding: 5% 2%; 
+    width: 100%;
+    
+}
+#services .sec-title{
+    padding-top: 5%;
+}
+#services .sec-title h1{
+    /* margin-left: 20%; */
+    font-size: 50px;
+}
+#services .line{
+    margin-top: 1%;
+}
+#services .line:nth-child(1){
+    margin-left: 20%;
+}
+#services .sec-body{
+   
+    margin-top: 5%;
+
+}
+.sec-body .card h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+.sec-body .card{
+    width: 45vw;
+    height: 60vh;
+    display: flex;
+    margin-left: 2%;
+    padding: 3%;
+   
+    box-shadow: 10px 0 10px rgba(192, 192, 192, 0.385);
+}
+#services .card .text{
+    width: 100%;
+    padding-top: 5%;
+    
+ 
+}
+.card .text p{
+    margin-top: 10%;
+}
+.sec-body .card:hover
+{
+    scale: 1.1;
+    background-color: orangered;
+    transition: 3s;
+}
+.circle{
+    width: 20vw;
+    margin: -55% 0 0 -5%;
+    height: 100vh;
+    
+    border-radius: 50% 50% 0 0;
+    background-color: orangered;
+}
+.circle img{
+    width: 100%;
+    border-radius: 50%;
+    height: 90%;
+}
+
+.row-1{
+    display: flex;
+}
+
+
+
+/* portfolio */
+ #portfolio{
+    margin-top: 5%;
+    animation-delay: 4s;
+    padding: 5% 7%;
+    backface-visibility: visible;
+    background-color: transparent;
+    display: flex;
+ }
+
+#portfolio #left-col{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#portfolio button{
+    padding:  3.7% 10%;
+    background-color: transparent;
+}
+
+#portfolio button:hover{
+    transition: 2s ease;
+    background-color: aquamarine;
+}
+
+#portfolio #right-col{
+    margin-left: 15%;
+    display: flex;
+}
+
+#portfolio #right-col img{
+    width: 23vw;
+    margin-right: 10%;
+    height: 60vh;
+    z-index: -1;
+}
+
+#portfolio #right-col img:hover{
+    filter: saturate(0);
+    transition: 3s; 
+    scale: 1.2;
+}
+.hover{
+    font-family: 'Times New Roman', Times, serif;
+    width: 23vw;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.538);
+
+}
+.hover  h6{
+    font-size: 15px;text-align: center;
+}
+.hover  h4{
+    font-size: 17px;
+    text-align: center;
+}
+
+/* ----CTA */
+
+#cta{
+    margin-top: 5%;
+    animation-delay: 5s;
+    height: 60vh;
+    background:  linear-gradient(to right, black, rgba(255, 0, 251, 0.676), black);
+    padding: 5%;
+    display: flex;
+}
+
+#cta button{
+    padding: 3%;
+    font-size: 13px;
+    margin-left: 5%;
+}
+
+#cta #md-text{
+    margin-top: 0;
+}
+#cta #left-col #bold-text{
+    margin-left: 5%;
+}
+#cta #right-col img{
+    margin-top: -20%;
+}
+
+
+/* -------------------newsletter--------------- */
+#subscribe{
+    width: 100%;
+    display: flex;
+    height: 85vh;
+    animation-delay: 6ms;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: whitesmoke; 
+    padding: 10%;
+}
+#leftnav_3{
+    display: flex;
+}
+#leftnav_3 img{
+    width: 22vw;
+    height: 50vh;
+    border: 15px solid white;
+}
+#leftnav_3 img:nth-child(2){
+    transform: rotate(-25deg);
+    margin-left: -30%;
+}
+#rightnav_3{
+    margin-left: 5%;
+}
+#rightnav_3 h3{
+    font-size: 22px;
+    font-weight: bold;
+}
+#rightnav_3 p{
+    font-size: 15px;
+}
+form{
+    display: flex;
+    margin-top: 10%;
+}
+form input{
+ width: 60vw;
+ background-color: white;
+ padding: 3%;
+ outline: none;
+ color: black;
+ font-size: 17px;
+ border: white;
+}
+:placeholder{
+    font-family: serif;
+    font-size: 17px;
+}
+form button{
+     color: black;
+   background-color: white;
+     padding: 3% 7%;
+    
+}
+
+ @media (max-width: 1000px) {
+    #subscribe{
+        height: 80vh;
+      
+    }
+
+    #leftnav_3 img{
+        width: 70%;
+        margin: 0 0 0 -15%;
+    }
+    #rightnav_3{
+  width: 35vw;
+  margin-left: 7%;
+    }
+#hide{
+display: none;
+
+}
+
+} 
+
+@media (max-width: 850px) {
+     #subscribe{
+        flex-direction: column;
+        height: 130vh;
+        padding-top: 10%;
+     }
+#leftnav_3 img{
+    width: 50%;
+    margin-left: 20%;
+}
+#rightnav_3{
+    width: 86%;
+    margin-top: 10%;
+}
+@media (max-width: 600px) {
+  
+     #leftnav_3{
+        margin-left: -10%;
+     }
+     #leftnav_3 img{
+        width: 60%;
+     }
+     #rightnav_3{
+        margin-top: 20%;
+     }
+}
+}
+
+@media (max-width: 350px) {
+    #webname h1{
+        font-size: 30px;
+    }
+    #leftnav{
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+    }
+     #subscribe{
+        height: 160vh;
+     }
+     form{
+        flex-direction: column;
+     }
+     form input{
+        padding: 10%;
+        width: 100%;
+     }
+     form  button{
+        padding:  5%;
+              
+     }  
+    } 
+
+    /* -----------FOOTER ------------ */
+    #footer{
+        height: auto;
+        padding: 3% 10%;
+        justify-content: space-between;
+        background:  linear-gradient(to right, black, rgba(255, 0, 251, 0.676), black);
+    }
+    .foot-links{display: flex;}
+    .foot-links ul{
+        width: 100vw;
+        display: flex;
+        margin-left: 20%;
+    }
+    
+    .foot-links ul li{
+     
+      margin-right: 5%;
+        /* padding:0 10%; */
+    }
+    .foot-links ul li a,
+     .foot-links ul li a:hover
+    {
+        color: white;
+    }
+    #footer h1{
+         font-size: 60px;
+        color: white;
+    
+    }
+    #bottom{
+        width: 60vw;
+        background-color: white;
+        height: 2px;
+        margin-left: 13%;
+        
+    }
+  
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards ;
+}
+
+@keyframes moveup {
+ 100%{
+    opacity: 1;
+    transform: translateY(0);
+ }
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+     
+#navbar{
+    height: 15vh;
+}
+#navbar ul{
+    display: none;
+}
+
+}
+
+
+@media (max-width: 900px) {
+    #webname {
+        width: 50vw;
+    } 
+    #hero-text{
+        padding-top: 4%;
+    }
+    #hero-text h6{
+        display: none;
+    }
+
+    #hero-text #left{
+        width: 250vw;
+    }
+    #hero-text #right img{
+      width: 60%;
+      height: 100%;
+    }
+
+    #hero-text h1{
+        font-size: 45px;
+        font-weight: bolder;
+    }
+
+#about #md-text{
+max-width: 50vw;
+    margin-left: -65%;
+}
+#portfolio{
+    max-width: 95vw;
+}
+#portfolio #left-col{
+    width: 40vw;
+}
+
+#hide{
+    display: none;
+}
+#portfolio #right-col img{
+    width: 50vw;
+}
+
+#cta #md-text{
+    max-width: 50vw;
+}
+
+#cta #right-col img{
+    margin: -5% 0 0  -40%;
+}
+
+.foot-links ul{
+    margin-left: 7%;
+}
+
+
+}
+@media (max-width: 500px){
+       div{
+        flex-direction: column;
+     }
+     #hero-text #right img{
+     margin-top: 5%;
+     }
+     #hero-text #right img:nth-child(2){
+        margin: -60% 0 0 30%;
+     }
+#hero-text{
+    margin-top: 5%;
+ 
+}
+     #hero-text #right img{
+        width: 50vw;
+        height: 40vh;
+     }
+
+#hero-text button{
+   display: none;
+}
+#hero-text h1{
+   display:  none;
+}
+
+#about h1{
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

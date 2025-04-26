@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    padding: 10px 10%;
+    background-image: url(Img/home-banner-bg.png);
+}
+ li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    padding:10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+nav ul li{
+ display: inline-block;
+ margin: 10px 15px;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: 500;
+}
+
+.login-btn{
+    color: black;
+    margin-right: 15px;
+    font-weight: 500;
+}
+.btn{
+    display: inline-block;
+    padding: 14px 50px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    transition: 0.5s;
+
+}
+
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.content h1{
+    font-size: 60px;
+
+}
+
+.content p{
+    margin: 10px 0 30px;
+    animation-delay: 0.5s;
+}
+.content .btn{
+    padding: 15px 60px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+
+.feature-img{
+    width: 430px;
+    height: 430px;
+    position: absolute;
+    background-color: black;
+    bottom: 10%;
+     border-radius: 50%;
+    right: 5%;
+    
+}
+.feature-img.anim{
+    animation-delay: 1.5s
+}
+.feature-img img{
+     border:10px solid aquamarine;
+    object-fit: cover;
+    width: 340px;
+    height: 340px;
+    margin: 10% 0 0 10%;
+    border-radius: 50%;
+    }
+
+    .anim{
+        opacity: 0;
+        transform: translateY(30px);
+        animation: moveup 0.5s linear forwards;
+    }
+
+@keyframes moveup {
+     100%{
+        opacity: 1;
+        transform: translateY(0);
+     }
+}
+
+
