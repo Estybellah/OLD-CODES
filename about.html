@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Us | Delivery Company</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<style>
+  
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+   #body li{
+   list-style: none;
+  }
+  #body a{
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+  }  
+.navbar-toggler{
+    display: none;
+}
+
+/* navabr */ 
+.navbar-brand{
+ margin: 1% 5%;
+ width: 100vw;
+ font-size: 30px;
+ font-weight: bold;
+ width: 40vw;
+ margin-right: 25%;
+}
+#links{
+    width: 100vw;
+    display: flex;
+}
+
+#links li{
+    margin-right: 2%;
+}
+#links li a{
+    color: white;
+    font-weight: bold;
+}
+#navbar{
+    position: fixed;
+    width:99vw;
+    padding: 1% 5% ;
+    display: flex;
+    margin-top: 1%;
+    height: 10vh;
+    border-radius: 50px;
+    /* background-color: black; */
+    box-shadow: 10px 0 30px silver;
+    z-index: 1000;
+}
+
+.about{
+    margin-top: 8%;
+}
+.jumbotron h2{
+    font-weight: bold;
+    color: red;
+    font-size: 70px;
+
+}
+.jumbotron p{
+    font-size: 30px;
+}
+
+.jumbotron {
+    background-image: url(images/comp-2.jpg);
+    background-size: cover;
+    width: 105vw;
+    background-position: center;
+    color: white;
+    margin: 5% 0 0 -3%;
+    height: 60vh;
+ 
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+}
+.black-1{
+    width: 105vw;
+    height: 60vh;
+    padding: 5% 10%;
+    margin: -5% 0 0 -3%;
+    padding-top: 7%;
+    background-color: rgba(0, 0, 0, 0.705);
+
+}
+
+ .jumbotron #learnmore{
+    color: black;
+    color: white;
+    padding: 1% 2%;
+    transform: translateX(400%);
+}
+
+/* about us */
+
+#body h1{
+    font-size: 55px;
+}
+#body img{
+    box-shadow: 10px 0 30px silver;
+}
+
+.about .row{
+    margin-top: 5%;
+    padding: 0 7%;
+}
+
+#history, 
+#mission{
+    padding: 4%;
+    box-shadow: 10px 4px 30px rgba(192, 192, 192, 0.42);
+    border: 1px dashed red;
+}
+
+.board{
+    margin-top: 7%;
+}
+
+.board h1{
+    font-size: 70px;
+}
+
+.board img{
+    width: 100%;
+    height: 50vh;
+    margin-right: 2%;
+    border: 20px solid black;
+}
+/* #pic-2{
+    border: 15px solid black;
+} */
+
+.sections{
+    margin-top: 7%;
+}
+.sections h1{
+    font-size: 70px;
+}
+.sections img{
+    width: 100%;
+    height: 50vh;
+    margin-right: 2%;
+    border: 20px solid black;
+}
+
+
+/* gallery */
+.gallery{
+    margin-top: 7%;
+}
+.gallery h1{
+    font-size: 70px;
+}
+
+
+.gallery-item {
+	margin-bottom: 1rem;
+}
+
+.gallery-item img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+}
+
+/* events */
+
+.events {
+    margin-top: 7%;
+	padding:  1rem;
+}
+#past{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.19);
+    padding: 3% 5%;
+    box-shadow: 10px 0 30px silver;
+}
+.events h1{
+    font-size: 70px;
+}
+#past h3{
+  font-size: 26px;   
+}
+
+.events{
+	margin-bottom: 1rem;
+}
+.events img{
+    width: 100%;
+    height: 50vh;
+}
+
+.event h2 {
+	font-weight: bold;
+}
+
+.event p {
+	margin-bottom: 1rem;
+}
+
+.footer {
+	background-color: #333;
+	color: white;
+}
+
+.footer{
+    padding: 2% 0;
+}
+
+.footer h3{
+    font-size: 50px;
+}
+@media (max-width: 500px) {
+    .black-1{
+        height: 55vh;
+    }
+     .jumbotron h2{
+        margin-top: 10%;
+        font-size: 45px;
+     }
+     
+.jumbotron{
+    margin-top: -12%;
+    padding-top: 12%;
+
+}
+#navbar{
+    margin-top: 3%;
+}
+
+#body h1{
+    font-size: 45px;
+}
+.footer h3{
+    font-size: 45px;
+}
+
+
+
+
+}
+
+
+
+
+
+</style>
+<body id="body">
+
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="navbar">
+    <div class="container">
+        <a class="navbar-brand text-danger" href="index-2.html" id="webname">XT LOGISTICS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" id="links">
+                <li class="nav-item active"><a class="nav-link" href="index-2.html" >Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-2.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-2.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-2.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-2.html">Place an Order</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-2.html">Contact</a></li>
+                 
+              </ul>
+        </div>
+    </div>
+</nav>
+	<!-- End Navigation Bar -->
+	
+	<!-- About Section -->
+
+    <div class="container-fluid mt-5">
+        <div class="jumbotron">
+          <div class="black-1">
+            <h2 class="display-4 mt-5 text-center">Welcome to XT LOGISTICS</h2>
+            <p class="lead text-center">We deliver happiness to your doorstep!</p>
+                 </div>
+        </div>
+    </div>
+	<section class="about">
+		<div class="container-fluid">
+			<h1 class="text-center text-danger">ABOUT US</h1>
+			<p class="text-center text-dark mb-5">OUR HISTORY, MISSION & VALUES</p>
+			<div class="row">
+				<div class="col-lg-6 col-md-12 col-sm-12 mb-5" id="history">
+					<h2 class="text-center text-danger mb-3">HISTORY</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est aut dignissimos perspiciatis blanditiis sunt similique, maiores, quos nam nisi eius praesentium laboriosam illum, eveniet facilis corrupti? Vel distinctio maxime magni nemo! Officiis quam dicta facilis ipsa sit harum, ullam eum? Harum doloremque ab iste!
+                         Ullam corrupti ratione fuga neque fugiat.
+                    </p>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12 mb-5" id="mission">
+					<h2 class="text-center text-danger mb-3">MISSION & VALUES</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                       <li>Lorem ipsum dolor sit amet.</li>
+                       <li>Lorem ipsum dolor sit ame lorem</li>
+                       <li>Lorem ipsum dolor sit amet lorem, ipsum.</li>
+                       <li>Lorem ipsum dolor sit amet lorem, ipsum dolor.</li>
+                       <li>Lorem ipsum dolor sit amet lorem ipsum dolor sit.</li>
+                    </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--  About Section -->
+	
+	<!-- Board of Directors Section -->
+	<section class="board">
+		<div class="container">
+			<h1 class="text-center text-danger">BOARD OF DIRECTORS</h1>
+            <p class="text-center text-dark mb-5">MEET OUR BOARD OF DIRECTORS</p>			<div class="row">
+				<div class="col-lg-4 ">
+					<div class="director">
+						<img src="images/dir-1.jpg" alt="Director 1">
+						<h2 class="text-center mt-3">JOHN DOE</h2>
+						<p class="text-center">CEO & Founder</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="director">
+						<img src="images/dir-2.webp" alt="Director 2" id="pic-2">
+						<h2 class="text-center mt-3">JANE SMITH</h2>
+						<p class="text-center">COO</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="director">
+						<img src="images/dir-3.webp" alt="Director 3">
+						<h2 class="text-center mt-3">BOB JOHNSON</h2>
+						<p class="text-center">CFO</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Board of Directors Section -->
+	
+	<!-- Company Sections Section -->
+	<section class="sections">
+		<div class="container">
+			<h1 class="text-center text-danger">OUR TEAMS</h1>
+            <p class="text-center text-dark mb-5"> MEET THE VARIOUS TEAMS IN OUR COMPANY
+            </p>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="section">
+						<img src="images/team-1.webp" alt="Section 1">
+						<h2 class="text-center mt-3 fw-bold">LOGISTICS</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="section">
+						<img src="images/team-2.webp" alt="Section 2">
+						<h2 class="text-center mt-3 fw-bold">CUSTOMER CARE</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="section">
+						<img src="images/team-3.jpg" alt="Section 2">
+						<h2 class="text-center mt-3 fw-bold">H.R DEPARTMENT</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+					</div>
+				</div>
+                        </div>
+                        </div>
+                        </section>
+
+<section class="gallery">
+    <div class="container">
+        <h1 class="text-center text-danger">OUR GALLERY</h1>
+        <p class="text-center text-dark mb-5">JOIN US AS WE GO DOWN MEMORY LANE </p>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="gallery-item">
+                    <img src="images/event-1.jpg" alt="Gallery 1">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="gallery-item">
+                    <img src="images/event-2.jpg" alt="Gallery 2">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="gallery-item">
+                    <img src="images/event-4.jpg" alt="Gallery 3">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Gallery Section -->
+
+<!-- Events Section -->
+<section class="events">
+    <div class="container">
+        <h1 class="text-center text-danger">OUR EVENTS</h1>
+        <p class="text-center text-dark mb-5">STAY UPDATED WITH OUR PAST AND FUTURE EVENTS </p>
+
+        <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                <img src="images/event-1.jpg" alt="">
+                  <h5 class="card-title mt-3">ANNUAL LE MANS CONFERENCE</h5>
+                  <p class="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, recusandae.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="images/event-4.jpg" alt="">
+                      <h5 class="card-title mt-3">INAUGRATION OF NEW BRANCH</h5>
+                      <p class="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, recusandae.</p>
+                
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="images/event-2.jpg" alt="">
+                      <h5 class="card-title mt-3"> QUATERLY REGIONAL CONFERENCE 2024</h5>
+                      <p class="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, recusandae.</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </div>
+</section>
+                        <!-- End Events Section -->
+                        
+                        <!-- Footer Section -->
+                        <footer class="footer">
+                            <div class="container">
+                                <h3 class="text-center text-danger mt-5 mb-2">XT LOGISTICS</h3>
+                                <p class="text-center">&copy; 2023 Delivery Company. All rights reserved.</p>
+                            </div>
+                        </footer>
+                        <!-- End Footer Section 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </body>
+
+

@@ -1,0 +1,304 @@
+ *{
+    margin: 0; padding: 0; box-sizing: border-box;
+ }
+body{
+    overflow-x: hidden;
+}
+/* .navbar-toggler-icon{
+ margin-left: 10%;
+} */
+#webname{
+    margin-left: 5%;
+    color: red;
+    margin-right: 30%;
+    font-size: 30px;
+    font-weight: bold;
+}
+body a{
+    text-decoration: none;
+}
+body li{
+    list-style: none;
+}
+#links{
+    width: 100%;
+}
+
+#links li{
+    margin-right: 2%;
+}
+#links li a{
+    color: white;
+    font-weight: bold;
+}
+#navbar{
+    position: fixed;
+    width:99vw;
+    padding:0 5% ;
+    margin-top: 0%;
+    height: 10vh;
+    border-radius: 50px;
+    background-color: black;
+    box-shadow: 10px 0 30px silver;
+    z-index: 1000;
+}
+.jumbotron {
+    background-image: url(images/comp-2.jpg);
+    background-size: cover;
+    width: 100vw;
+    background-position: center;
+    color: white;
+    margin: -2% 0 0 -3%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+}
+.black-1{
+    width: 105vw;
+    height: 70vh;
+    margin: -5% 0 0 -3%;
+    padding:7%  10%;
+
+    background-color: rgba(0, 0, 0, 0.705);
+
+}
+.jumbotron h1{
+   font-weight: bold;
+    color: red;
+}
+
+ .jumbotron #learnmore{
+    color: white;
+    padding: 1% 2%;
+}
+
+
+#about #learnmore{
+    color: white;
+    padding: 1.8% 5%;
+}
+#about {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  #about .img-fluid {
+    width: 100vw;
+    height: auto;
+  }
+
+
+/* SERVUCES */
+
+
+#services .card{
+    width: 100%;
+    height: 55vh;
+    padding: 0;
+}
+
+#services .card:hover{
+    scale: 1.1;
+    transition: 3s all ease-in-out;
+    background-color: silver;
+}
+
+
+
+/* PRODUCTS */
+
+#products{
+    margin-top: 10%;
+}
+#products .card img{
+ width: 100%;
+ height: fit-content;
+}
+/* testimonial */
+
+#testimonial{
+    margin-left: -6%;
+    width: 100vw;
+    height: 50vh;
+   
+}
+.body img{
+    box-shadow: 10px 0 30px silver;
+}
+#testimonial .black{
+   background-color: red;
+    padding: 5% 22%;
+    box-shadow: 10px 0 30px silver;
+    height: 47vh;
+    display: flex;
+    width: 95vw;
+    color: black
+}
+.testimonial{
+    display: flex;
+}
+blockquote{
+    font-size: 30px;
+}
+.testimonial p{
+    font-size: 20px;
+    color: white;
+}
+.testimonial h3{
+    font-size: 18px;
+    max-width: 100vw;
+    color: white;
+    margin: 5% 0 2% 10%;
+}
+
+/* order */
+#order{
+    border: 1px dashed red;
+    justify-content: center;
+    align-items: center;
+}
+#order img{
+    width: 100%;
+    height: 60vh;
+}
+#del-form p{
+    font-size: 12px;
+}
+
+.body a{
+    text-decoration: none;
+}
+
+
+/* Custom CSS styles */
+
+
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+/* styles.css */
+.hero-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .about-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .testimonials-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .order-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .contact-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  /* }foter */
+
+  #footer{
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    padding: 3%;
+    margin-left: -2%;
+  }
+
+
+.foot-links ul{
+    display: flex;
+    margin-left: -5%;
+    justify-content: space-evenly;
+}
+
+
+.foot-links ul li a{
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+#footer h1{
+    font-size: 70px;
+}
+
+
+
+/* media queries */ 
+
+@media (max-width: 1200px) {
+    #del-form{
+        margin-top: 5%;
+    }
+  #hide{
+    display: none;
+  }
+    #contact{
+        border: 1px dashed red;
+        margin: 3% 0;
+    }
+}
+
+@media (max-width: 850px) {
+    blockquote{
+        font-size: 27px;
+    }
+
+    .foot-links ul{
+      flex-direction: column;
+      text-align: center;
+    }
+.foot-links ul li a:hover{
+    color: red;
+}
+}
+
+
+@media (max-width: 500px) {
+    #testimonial{margin-left: -4%;}  
+    
+    blockquote{
+        font-size: 22px;
+    }
+    #testimonial h3{
+        font-size: 16px;
+    }
+    #products{
+        margin-top: 20%;
+    }
+    #footer h1{
+        font-size: 45px;
+    }
+    #hide-1{
+        display: none;
+    }
+}
+
